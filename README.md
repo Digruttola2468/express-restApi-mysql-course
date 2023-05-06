@@ -4,6 +4,8 @@ Este proyecto es parte del codigo realizado por el siguiente video [Fazt Code](h
 
 ## Method HTTP 
 
+**URL**: https://express-restapi-mysql-course-production.up.railway.app/
+
 - GET `/api/employess`: Obtiene todos los empleados
 - GET `/api/employess/:id`: Obtiene un empleado
 - POST `/api/employess/`: Crea un nuevo empleado
