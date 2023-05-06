@@ -2,7 +2,7 @@ import { con } from "../db.js";
 
 export const getEmployees = async (req, res) => {
   try {
-    const [rows] = await con.query("SELECT * FROM companidb.employee;");
+    const [rows] = await con.query("SELECT * FROM employee;");
     res.json(rows);
   } catch (error) {
     return res.status(500).json({ message: "something goes wrong" });
@@ -12,7 +12,7 @@ export const getEmployees = async (req, res) => {
 export const getOneEmployes = async (req, res) => {
   try {
     const [rows] = await con.query(
-      "SELECT * FROM companidb.employee WHERE id=?",
+      "SELECT * FROM employee WHERE id=?",
       [req.params.id]
     );
 
@@ -29,7 +29,7 @@ export const createEmployes = async (req, res) => {
   try {
     const { name, salary } = req.body;
     const [rows] = await con.query(
-      "INSERT INTO `companidb`.`employee` (`name`, `salary`) VALUES (?, ?)",
+      "INSERT INTO employee (`name`, `salary`) VALUES (?, ?)",
       [name, salary]
     );
     res.send({
@@ -66,7 +66,7 @@ export const updateEmployes = async (req, res) => {
 export const delateEmployes = async (req, res) => {
   try {
     const [result] = await con.query(
-      "DELETE FROM `companidb`.`employee` WHERE (id = ?)",
+      "DELETE FROM employee WHERE (id = ?)",
       [req.params.id]
     );
 
