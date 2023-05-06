@@ -12,6 +12,12 @@ Este proyecto es parte del codigo realizado por el siguiente video [Fazt Code](h
 - PUT `/api/employess/:id`: Actualiza el empleado registrado
 - DELETE `/api/employess/:id`: Elimina un empleado registrado
 
+## Table MySQL
+
+- **id** INT AUTO_INCREMENT PRIMARY KEY
+- **name** VARCHAR
+- **salary** INT
+
 ## Deploy
 
 Para este proyecto desplegamos la aplicacion en [railway](https://railway.app/)
