@@ -18,6 +18,12 @@ Este proyecto es parte del codigo realizado por el siguiente video [Fazt Code](h
 - **name** VARCHAR
 - **salary** INT
 
+## CORS
+
+Para este tipo de proyecto instalamos la libreria [npm CORS](https://www.npmjs.com/package/cors) para que nos permita consumir la API desde el FrontEnd
+
+Este principio CORS se puede investigar mas por este link [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) ya que nos permite de forma avanzada establecer paginas privadas.
+
 ## Deploy
 
 Para este proyecto desplegamos la aplicacion en [railway](https://railway.app/)
